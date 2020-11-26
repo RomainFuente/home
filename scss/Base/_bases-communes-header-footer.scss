@@ -1,0 +1,12 @@
+// bases communes header footer 
+header, footer{
+		background-color: $main-font-color;
+		opacity: 0.9;
+		position: fixed;
+		width: 100%;
+		z-index: 4;
+		display: flex;
+		a{
+			opacity: 1;
+		}
+	}

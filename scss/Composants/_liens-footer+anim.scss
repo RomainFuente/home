@@ -1,0 +1,19 @@
+// Liens footer + anim //
+
+body{
+
+	footer{
+		
+		a{
+			font-family: 'Roboto';
+			font-size: 1.5rem;
+			margin: 0 20px;
+			position: relative;
+			text-decoration: none;
+			&:hover{
+			 display: inline-block;
+				 animation: wiggle 150ms linear 6;
+			}
+		}
+	}
+}

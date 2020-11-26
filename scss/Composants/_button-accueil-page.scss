@@ -1,0 +1,53 @@
+// button acceuil page 
+
+.soon{
+	margin-top: 50px;
+	display: flex;
+	justify-content: center;
+	overflow: hidden;
+	position: relative;
+	left: 20px;
+	opacity: 0.9;
+
+	&__btn{
+		height: 60px;
+		width: 250px;
+		font-size: 1.2rem;
+		color: #1c1c1c;
+		background-color: $main-font-color;
+		border-radius: 10px;
+		border: none;
+		transition: 350ms 150ms ease-in-out;
+		cursor: pointer;
+		text-align: start;
+		padding-left: 20px;
+			
+		&:hover{
+			background: lighten($main-font-color, 20);
+			border: solid 1px #1c1c1c;
+			padding-left: 19px;
+		}
+	}
+
+	p{
+		display: block;
+		position: relative;
+		font-size: 2.5rem;
+		left: -50px;
+		top: -39px;
+		color: #1c1c1c;
+		cursor: pointer;
+	}
+
+	.anim-soon-btn-1{
+		animation: soon 1.6s 150ms ease-in-out infinite alternate;
+	}
+
+	.anim-soon-btn-2{
+		animation: soon 1.6s 650ms ease-in-out infinite alternate;
+	}
+
+	.anim-soon-btn-3{
+		animation: soon 1.6s 1050ms ease-in-out infinite alternate;
+	}
+}

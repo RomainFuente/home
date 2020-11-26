@@ -1,0 +1,70 @@
+// base lien menu accueil //
+body{
+
+	#bloc-page{
+
+		main{
+
+			div{
+
+				section{
+					
+					a{
+						display: flex;
+						flex-direction: column;
+						justify-content: center;
+						align-items: center;
+						width: 100%;
+						height: 100%;
+						cursor: pointer;
+						text-decoration: none;
+						overflow: hidden;	
+						position: absolute;
+						top: 0;
+						left: 0;
+						transform: scale(1);
+						opacity: 0.8;
+						transition: transform 600ms 100ms ease-in-out,opacity 400ms 300ms ease-in-out;
+						
+						&:hover{
+						transform: scale(1.2);
+						opacity: 1;
+						background: lighten($main-font-color, 5);
+						border-radius: 20px;
+						}
+
+						p{
+							font-size: 2.7em;
+							margin-top: 0;
+						}
+
+						h2{
+							width: 100%;
+							text-align: center;
+							margin-top: 0;
+						}
+						aside{
+							text-align: center;
+							.production-picture{
+								width: 80px;
+								height: 80px;
+							}
+							.about-me-picture{
+								width: 40%;
+							}
+							.free-devis-picture{
+								width: 100%;
+							}
+							.contact-picture{
+								width: 100%;
+							}
+							.production-picture-page{
+								width: 200px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

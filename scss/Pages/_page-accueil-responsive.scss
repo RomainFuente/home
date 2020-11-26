@@ -1,0 +1,161 @@
+/* Responsive acceuil 1200px *////////////////////////////////////////////////
+
+@media all and (max-width: 1200px)
+{
+	#bloc-page .accueil__section{
+
+		width: 32%;
+		padding-top: 20%;
+
+		.production-picture{
+			width: 70px;
+			height: 70px;
+		}
+	}
+}
+
+
+/* Responsive acceuil 1050px *////////////////////////////////////////////////
+
+@media all and (max-width: 1050px)
+{
+	#bloc-page .accueil__section{
+
+		width: 35%;
+		padding-top: 20%;
+
+		.lien-delice h2{
+			margin-bottom: 0;
+		}
+		.production-picture{
+			width: 60px;
+			height: 60px;
+		}
+	}
+}
+
+
+/* Responsive acceuil 750px *////////////////////////////////////////////////
+
+@media all and (max-width: 750px)
+{
+	body{
+		overflow-x: hidden;
+		
+		header{
+			height: 90px;
+
+			img{
+				height: 90%;
+			}
+			a{
+				font-size: 0.9rem;
+			}
+		}
+		#bloc-page, .bloc-page{
+			overflow: hidden;
+
+			footer {
+				height: 50px;
+				a{
+					font-size: 1.1em;
+				}
+			}
+
+			.accueil div{
+				flex-direction: column;
+				margin-bottom: 0;
+				align-items: center;
+			
+				.accueil__section{
+					width: 70%;
+					padding-top: 20%;
+					margin:0 0 30px 0;
+					h2{
+						font-size: 1rem;
+						margin-bottom: 0;
+					}
+					
+					.free-devis-picture{
+						width: 80%;
+					}
+					.about-me-picture{
+						width: 30%;
+					}
+				}
+			}		
+		}
+	}		
+}
+
+/* Responsive acceuil 500px *////////////////////////////////////////////////
+
+@media all and (max-width: 500px)
+{
+	body{
+		#bloc-page{ 
+			header{
+				height:70px; 
+				a{
+					font-size: 0.6rem;
+				}
+				img{
+					height: 100%;
+				}
+			}
+			.accueil{
+				margin-top: 100px;
+				div{
+					.accueil__section{
+						padding-top: 30%;	
+						.production-picture{
+							width: 45px;
+							height: 45px;
+						}
+						.free-devis-picture{
+							width: 48%;
+						}
+						.contact-picture{
+							width: 70%;
+						}
+					}
+				}
+			}
+			.soon{
+				margin-top: 10px;
+			}
+		}
+	}
+}
+
+
+/* Responsive acceuil 360px *////////////////////////////////////////////////
+
+@media all and (max-width: 360px)
+{
+	body{
+		#bloc-page, .bloc-page{
+			header{
+				height: 60px;
+				a{
+					font-size: 0.4rem;
+				}
+			}
+			.soon{
+				.soon__btn{
+					height: 45px;
+					width: 210px;
+					font-size: 1rem;
+				}
+				p{
+					font-size: 2rem;
+					left: -40px;
+					top: -33px;
+				}
+			}
+			footer a{
+				font-size: 0.9em;
+			}
+		}
+	}		
+}

@@ -1,0 +1,34 @@
+// base bloc page accueil //
+
+
+#bloc-page{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: #1c1c1c;
+	main{
+		margin-top: 150px;
+		width: 100%;
+		min-height: 100%;
+		display: flex;
+		flex-direction: column;
+		
+		div{
+			display: flex;
+			justify-content: center;
+			margin-bottom: 70px;
+			
+			section{
+				border-radius: 5px;
+				width: 30%;
+				margin: 0 35px 0 35px;
+				position: relative;
+				padding-top: 15%;
+				box-shadow: 0 0 15px $shadow-color;
+				background-color: #9fccd1;
+				opacity: 0.9;
+			}
+		}
+	}
+}	

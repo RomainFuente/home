@@ -1,0 +1,353 @@
+@keyframes soon {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes wiggle {
+  0% {
+    transform: translateX(0); }
+  33% {
+    transform: translateX(6px); }
+  66% {
+    transform: translateX(-6px); }
+  100% {
+    transform: translateX(0); } }
+
+body {
+  width: 100%;
+  margin: auto;
+  background-image: url(../images/fond-bois.jpg);
+  background-attachment: fixed;
+  font-family: sans-serif; }
+  body a {
+    text-decoration: none;
+    color: #1c1c1c; }
+
+header, footer {
+  background-color: #9fccd1;
+  opacity: 0.9;
+  position: fixed;
+  width: 100%;
+  z-index: 4;
+  display: flex; }
+  header a, footer a {
+    opacity: 1; }
+
+footer {
+  position: fixed;
+  height: 60px;
+  bottom: 0;
+  justify-content: space-between; }
+
+header {
+  height: 100px;
+  top: 0;
+  justify-content: center;
+  align-items: center; }
+
+.soon {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  left: 20px;
+  opacity: 0.9; }
+  .soon__btn {
+    height: 60px;
+    width: 250px;
+    font-size: 1.2rem;
+    color: #1c1c1c;
+    background-color: #9fccd1;
+    border-radius: 10px;
+    border: none;
+    transition: 350ms 150ms ease-in-out;
+    cursor: pointer;
+    text-align: start;
+    padding-left: 20px; }
+    .soon__btn:hover {
+      background: #e4f1f2;
+      border: solid 1px #1c1c1c;
+      padding-left: 19px; }
+  .soon p {
+    display: block;
+    position: relative;
+    font-size: 2.5rem;
+    left: -50px;
+    top: -39px;
+    color: #1c1c1c;
+    cursor: pointer; }
+  .soon .anim-soon-btn-1 {
+    animation: soon 1.6s 150ms ease-in-out infinite alternate; }
+  .soon .anim-soon-btn-2 {
+    animation: soon 1.6s 650ms ease-in-out infinite alternate; }
+  .soon .anim-soon-btn-3 {
+    animation: soon 1.6s 1050ms ease-in-out infinite alternate; }
+
+body footer a {
+  font-family: 'Roboto';
+  font-size: 1.5rem;
+  margin: 0 20px;
+  position: relative;
+  text-decoration: none; }
+  body footer a:hover {
+    display: inline-block;
+    animation: wiggle 150ms linear 6; }
+
+body header a {
+  font-size: 1.2rem; }
+
+body #bloc-page main div section a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  text-decoration: none;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: scale(1);
+  opacity: 0.8;
+  transition: transform 600ms 100ms ease-in-out,opacity 400ms 300ms ease-in-out; }
+  body #bloc-page main div section a:hover {
+    transform: scale(1.2);
+    opacity: 1;
+    background: #b0d5d9;
+    border-radius: 20px; }
+  body #bloc-page main div section a p {
+    font-size: 2.7em;
+    margin-top: 0; }
+  body #bloc-page main div section a h2 {
+    width: 100%;
+    text-align: center;
+    margin-top: 0; }
+  body #bloc-page main div section a aside {
+    text-align: center; }
+    body #bloc-page main div section a aside .production-picture {
+      width: 80px;
+      height: 80px; }
+    body #bloc-page main div section a aside .about-me-picture {
+      width: 40%; }
+    body #bloc-page main div section a aside .free-devis-picture {
+      width: 100%; }
+    body #bloc-page main div section a aside .contact-picture {
+      width: 100%; }
+    body #bloc-page main div section a aside .production-picture-page {
+      width: 200px; }
+
+/* base page menu  */
+.note-page, .delice-page, .palette-page, .chic-page {
+  margin: -50px 0 100px 0;
+  width: 100%; }
+  .note-page main, .delice-page main, .palette-page main, .chic-page main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.3em;
+    color: black; }
+    .note-page main h2, .delice-page main h2, .palette-page main h2, .chic-page main h2 {
+      text-align: center; }
+    .note-page main .menu, .delice-page main .menu, .palette-page main .menu, .chic-page main .menu {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 80%;
+      box-shadow: 0 0 15px #b8b8b8; }
+      .note-page main .menu .title-top, .delice-page main .menu .title-top, .palette-page main .menu .title-top, .chic-page main .menu .title-top {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 60px 0 60px 0; }
+        .note-page main .menu .title-top img, .delice-page main .menu .title-top img, .palette-page main .menu .title-top img, .chic-page main .menu .title-top img {
+          width: 140px; }
+      .note-page main .menu .title-bottom, .delice-page main .menu .title-bottom, .palette-page main .menu .title-bottom, .chic-page main .menu .title-bottom {
+        display: flex; }
+        .note-page main .menu .title-bottom img, .delice-page main .menu .title-bottom img, .palette-page main .menu .title-bottom img, .chic-page main .menu .title-bottom img {
+          width: 100px;
+          height: 140px; }
+      .note-page main .menu section, .delice-page main .menu section, .palette-page main .menu section, .chic-page main .menu section {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 50px; }
+        .note-page main .menu section .title, .delice-page main .menu section .title, .palette-page main .menu section .title, .chic-page main .menu section .title {
+          display: flex;
+          justify-content: center; }
+          .note-page main .menu section .title .submenu-title, .delice-page main .menu section .title .submenu-title, .palette-page main .menu section .title .submenu-title, .chic-page main .menu section .title .submenu-title {
+            cursor: pointer;
+            margin: 0 2% 0 2%; }
+          .note-page main .menu section .title .progress-underline, .delice-page main .menu section .title .progress-underline, .palette-page main .menu section .title .progress-underline, .chic-page main .menu section .title .progress-underline {
+            height: 3px;
+            border-radius: 30%;
+            background-color: currentColor;
+            transform: scaleX(0);
+            transform-origin: 0% 50%;
+            transition: transform 1000ms 150ms ease-in-out; }
+        .note-page main .menu section h3:hover + .progress-underline, .delice-page main .menu section h3:hover + .progress-underline, .palette-page main .menu section h3:hover + .progress-underline, .chic-page main .menu section h3:hover + .progress-underline {
+          transform: scale(1); }
+        .note-page main .menu section ul, .delice-page main .menu section ul, .palette-page main .menu section ul, .chic-page main .menu section ul {
+          width: 80%;
+          padding: 0; }
+          .note-page main .menu section ul li, .delice-page main .menu section ul li, .palette-page main .menu section ul li, .chic-page main .menu section ul li {
+            display: flex;
+            justify-content: space-between; }
+            .note-page main .menu section ul li .price, .delice-page main .menu section ul li .price, .palette-page main .menu section ul li .price, .chic-page main .menu section ul li .price {
+              display: flex;
+              align-items: center;
+              font-weight: 900; }
+
+/* Responsive base menu 1050px */
+@media all and (max-width: 1050px) {
+  .note-page main .menu, .delice-page main .menu, .palette-page main .menu, .chic-page main .menu {
+    width: 100%; }
+    .note-page main .menu .title-top, .delice-page main .menu .title-top, .palette-page main .menu .title-top, .chic-page main .menu .title-top {
+      margin: 0; }
+      .note-page main .menu .title-top img, .delice-page main .menu .title-top img, .palette-page main .menu .title-top img, .chic-page main .menu .title-top img {
+        width: 100px; }
+    .note-page main .menu section .price, .delice-page main .menu section .price, .palette-page main .menu section .price, .chic-page main .menu section .price {
+      margin-left: 20px; }
+    .note-page main .menu section .title, .delice-page main .menu section .title, .palette-page main .menu section .title, .chic-page main .menu section .title {
+      width: 95%; } }
+
+/* Responsive base menu 750px */
+@media all and (max-width: 750px) {
+  .note-page main .main-title, .delice-page main .main-title, .palette-page main .main-title, .chic-page main .main-title {
+    font-size: 1em; }
+  .note-page main .menu, .delice-page main .menu, .palette-page main .menu, .chic-page main .menu {
+    width: 100%; }
+    .note-page main .menu .title-top, .delice-page main .menu .title-top, .palette-page main .menu .title-top, .chic-page main .menu .title-top {
+      margin: 0; }
+    .note-page main .menu .title-bottom, .delice-page main .menu .title-bottom, .palette-page main .menu .title-bottom, .chic-page main .menu .title-bottom {
+      flex-direction: column;
+      align-items: center; }
+    .note-page main .menu section .price, .delice-page main .menu section .price, .palette-page main .menu section .price, .chic-page main .menu section .price {
+      margin-left: 20px; }
+    .note-page main .menu section .title, .delice-page main .menu section .title, .palette-page main .menu section .title, .chic-page main .menu section .title {
+      width: 95%; }
+    .note-page main .menu section ul, .delice-page main .menu section ul, .palette-page main .menu section ul, .chic-page main .menu section ul {
+      margin: 0; } }
+
+#bloc-page {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #1c1c1c; }
+  #bloc-page main {
+    margin-top: 150px;
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column; }
+    #bloc-page main div {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 70px; }
+      #bloc-page main div section {
+        border-radius: 5px;
+        width: 30%;
+        margin: 0 35px 0 35px;
+        position: relative;
+        padding-top: 15%;
+        box-shadow: 0 0 15px #b8b8b8;
+        background-color: #9fccd1;
+        opacity: 0.9; }
+
+/* Responsive acceuil 1200px */
+@media all and (max-width: 1200px) {
+  #bloc-page .accueil__section {
+    width: 32%;
+    padding-top: 20%; }
+    #bloc-page .accueil__section .production-picture {
+      width: 70px;
+      height: 70px; } }
+
+/* Responsive acceuil 1050px */
+@media all and (max-width: 1050px) {
+  #bloc-page .accueil__section {
+    width: 35%;
+    padding-top: 20%; }
+    #bloc-page .accueil__section .lien-delice h2 {
+      margin-bottom: 0; }
+    #bloc-page .accueil__section .production-picture {
+      width: 60px;
+      height: 60px; } }
+
+/* Responsive acceuil 750px */
+@media all and (max-width: 750px) {
+  body {
+    overflow-x: hidden; }
+    body header {
+      height: 90px; }
+      body header img {
+        height: 90%; }
+      body header a {
+        font-size: 0.9rem; }
+    body #bloc-page, body .bloc-page {
+      overflow: hidden; }
+      body #bloc-page footer, body .bloc-page footer {
+        height: 50px; }
+        body #bloc-page footer a, body .bloc-page footer a {
+          font-size: 1.1em; }
+      body #bloc-page .accueil div, body .bloc-page .accueil div {
+        flex-direction: column;
+        margin-bottom: 0;
+        align-items: center; }
+        body #bloc-page .accueil div .accueil__section, body .bloc-page .accueil div .accueil__section {
+          width: 70%;
+          padding-top: 20%;
+          margin: 0 0 30px 0; }
+          body #bloc-page .accueil div .accueil__section h2, body .bloc-page .accueil div .accueil__section h2 {
+            font-size: 1rem;
+            margin-bottom: 0; }
+          body #bloc-page .accueil div .accueil__section .free-devis-picture, body .bloc-page .accueil div .accueil__section .free-devis-picture {
+            width: 80%; }
+          body #bloc-page .accueil div .accueil__section .about-me-picture, body .bloc-page .accueil div .accueil__section .about-me-picture {
+            width: 30%; } }
+
+/* Responsive acceuil 500px */
+@media all and (max-width: 500px) {
+  body #bloc-page header {
+    height: 70px; }
+    body #bloc-page header a {
+      font-size: 0.6rem; }
+    body #bloc-page header img {
+      height: 100%; }
+  body #bloc-page .accueil {
+    margin-top: 100px; }
+    body #bloc-page .accueil div .accueil__section {
+      padding-top: 30%; }
+      body #bloc-page .accueil div .accueil__section .production-picture {
+        width: 45px;
+        height: 45px; }
+      body #bloc-page .accueil div .accueil__section .free-devis-picture {
+        width: 48%; }
+      body #bloc-page .accueil div .accueil__section .contact-picture {
+        width: 70%; }
+  body #bloc-page .soon {
+    margin-top: 10px; } }
+
+/* Responsive acceuil 360px */
+@media all and (max-width: 360px) {
+  body #bloc-page header, body .bloc-page header {
+    height: 60px; }
+    body #bloc-page header a, body .bloc-page header a {
+      font-size: 0.4rem; }
+  body #bloc-page .soon .soon__btn, body .bloc-page .soon .soon__btn {
+    height: 45px;
+    width: 210px;
+    font-size: 1rem; }
+  body #bloc-page .soon p, body .bloc-page .soon p {
+    font-size: 2rem;
+    left: -40px;
+    top: -33px; }
+  body #bloc-page footer a, body .bloc-page footer a {
+    font-size: 0.9em; } }

@@ -1,0 +1,100 @@
+/* base page menu  *////////////////////////////////////////////////////////////
+
+.note-page, .delice-page, .palette-page, .chic-page{
+	margin: -50px 0 100px 0;
+	width: 100%;
+	main{
+		width: 100%;
+		display: flex;
+		flex-direction: column;   
+		align-items: center;               
+		font-family: 'Roboto', sans-serif;
+		font-size: 2.3em;
+		color: black;
+		
+		h2{
+			text-align: center;
+		}
+		
+		.menu{
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			width: 80%;
+			box-shadow: 0 0 15px $shadow-color;
+				
+				.title-top{
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					margin: 60px 0 60px 0;
+						
+					img{
+						width: 140px;
+					}
+				}
+
+				.title-bottom{
+					display: flex;
+						
+					img{
+						width: 100px;
+						height: 140px;
+					}
+				}
+
+				section{
+					width: 100%;
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					margin-bottom: 50px;
+					
+					.title{
+						display: flex;
+						justify-content: center;
+							
+						.submenu-title{
+							cursor: pointer;
+							margin: 0 2% 0 2%;
+						}
+						
+						.progress-underline{
+							height: 3px;
+							border-radius: 30%;
+							background-color: currentColor;
+							transform: scaleX(0);
+							transform-origin: 0% 50%;
+							transition: transform 1000ms 150ms ease-in-out;
+						}	
+					}
+
+				h3{
+					
+					&:hover{
+						
+						& + .progress-underline{
+								transform: scale(1);
+						}
+					}
+				}
+
+				ul{
+					width: 80%;
+					padding: 0;
+
+					li{
+						display: flex;
+						justify-content: space-between;
+					
+						.price{
+							display: flex;
+							align-items: center;
+							font-weight: 900;
+						}
+					}
+				}
+			}
+		}
+	}
+}

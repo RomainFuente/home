@@ -1,0 +1,75 @@
+/* Responsive base menu 1050px *////////////////////////////////////////////////
+
+@media all and (max-width: 1050px)
+{
+	.note-page, .delice-page, .palette-page, .chic-page{
+		main{
+			
+			.menu{
+				width: 100%;
+				
+				.title-top{
+					margin: 0;
+					
+					img{
+						width: 100px;
+					}
+				}
+				
+				section{
+					
+					.price{
+						margin-left: 20px;
+					}
+					
+					.title{
+						width: 95%;
+					}
+				}
+			}
+		}
+	}
+} 
+
+/* Responsive base menu 750px *////////////////////////////////////////////////
+
+@media all and (max-width: 750px)
+{
+	.note-page, .delice-page, .palette-page, .chic-page{
+		
+		main{
+
+			.main-title{
+			font-size: 1em;
+			}
+
+			.menu{
+				width: 100%;
+				
+				.title-top{
+					margin: 0;
+				}
+				
+				.title-bottom{
+					flex-direction: column;
+					align-items: center;
+				}
+				
+				section{
+					
+					.price{
+						margin-left: 20px;
+					}
+					
+					.title{
+						width: 95%;
+					}
+					
+					ul{
+						margin: 0;
+					}
+				}
+			}
+		}
+	}
+}
